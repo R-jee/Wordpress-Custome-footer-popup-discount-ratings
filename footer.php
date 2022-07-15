@@ -127,6 +127,7 @@ p.deal_time {
 .discount_head {
     color: #fff;
     font-size: 1.6rem;
+    font-weight:700;
     margin-top: 0;
     margin-bottom: 17px;
     line-height: normal;
@@ -164,11 +165,11 @@ span.number_rating {
 }
 
 @media screen and (max-width:425px) {
-    .product_details {
-    width: 50%;
+a.get_deal_btn {
+    padding: 8px 3px!important;
 }
-.prod_rating_column {
-    width: 50%;
+.discount_head {
+    font-size: 1.2rem;
 }
 }
 </style>
@@ -226,9 +227,6 @@ function popup_custom_startRatings($star_no, $star_ratings, $start_ratings_total
   	}
   	return ( fmod( $popup_ratings_use ,  2) == 0 ) ? "fa-star-o" : (    ( fmod( $popup_ratings_use ,  2) == 1 ) ? "fa-star" : "fa-star-half");
 }
-
-
-
 ?>
 
 <div class="amr_footer_newsletter">
